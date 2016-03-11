@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>ko.router</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.css" rel="stylesheet"/>
+    <link href="css/Site.css" rel="stylesheet"/>
+
+</head>
+<body>
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <a href="/">Translations</a>
+        </div>
+    </div>
+</div>
+<div class="container body-content">
+
+    <div id="page" data-bind="component: { name: component}"></div>
+
+
+    <h2>
+        Projects
+    </h2>
+
+    <table class="table">
+        <tr>
+            <td>
+                <a href="/access">ICM Capital Access</a>
+            </td>
+            <td>
+                <a href="/access/edit"> Edit ICM Capital Access</a>
+            </td>
+            <td>
+                <a href="/access/edit/new">new</a>
+            </td>
+        </tr>
+    </table>
+
+
+
+    <hr />
+    <footer>
+        <p>&copy;  Application</p>
+    </footer>
+</div>
+
+<script src="/scripts/require.config.js"></script>
+<script data-main="/scripts/app/_run.js" src="http://requirejs.org/docs/release/2.1.22/minified/require.js"></script>
+
+</body>
+</html>
